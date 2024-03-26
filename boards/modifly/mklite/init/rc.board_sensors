@@ -1,0 +1,14 @@
+#!/bin/sh
+#
+# board specific sensors init
+#------------------------------------------------------------------------------
+
+board_adc start
+
+bmi088 -A -s -b 1 start
+bmi088 -G -s -b 1 start
+lis3mdl -s -b 1 start
+mpu6500 -s -b 1 start
+lps22hb -s -b 1 start
+# mavlink -d /dev/ttyS2 start
+# mavlink -d /dev/ttyS3
