@@ -5,10 +5,10 @@
 
 board_adc start
 
-bmi088 -A -s -b 1 start
-bmi088 -G -s -b 1 start
-lis3mdl -s -b 1 start
-mpu6500 -s -b 1 start
+bmi088 -A -s -b 1 -R 270 start
+bmi088 -G -s -b 1 -R 270 start
+lis3mdl -s -b 1 -R 90 start
+mpu6500 -s -b 1 -q start
 lps22hb -s -b 1 start
 # mavlink -d /dev/ttyS2 start
 # mavlink -d /dev/ttyS3
